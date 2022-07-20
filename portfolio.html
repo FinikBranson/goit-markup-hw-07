@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="header-nav">
+          <!-- logo -->
+          <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
+
+          <!-- site page navigation -->
+          <ul class="header-nav-list list">
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="./index.html">Студия</a>
+            </li>
+
+            <li class="header-nav-item">
+              <a class="header-nav-link link current" href="./portfolio.html">Портфолио</a>
+            </li>
+
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contact navigation -->
+        <ul class="header-contacts-list list">
+          <li class="header-contacts-item">
+            <a class="header-contacts-link link" href="mailto:info@devstudio.com">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li class="header-contacts-item">
+            <a class="header-contacts-link link" href="tel:+380961111111"
+              ><svg class="header-icon" width="14" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="works section">
+        <h1 class="visually-hidden">Наши работы</h1>
+
+        <!-- filter button -->
+        <div class="container filter">
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <button class="filters-btn active" type="button">Все</button>
+            </li>
+            <li class="filter-item">
+              <button class="filters-btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button class="filters-btn" type="button">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button class="filters-btn" type="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filters-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- examples of work first line -->
+
+          <ul class="cards-list list">
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-1.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title">Технокряк</h2>
+                  <p class="cards-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-2.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="cards-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-3.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title">Ресторан<span lang="en"> Seafood</span></h2>
+                  <p class="cards-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- examples of work second line -->
+
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-4.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title">Проект<span lang="en"> Prime</span></h2>
+                  <p class="cards-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-5.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title">Проект<span lang="en"> Boxes</span></h2>
+                  <p class="cards-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-6.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title"><span lang="en">Inspiration has no Borders</span></h2>
+                  <p class="cards-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- examples of work third line -->
+
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-7.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title">Издание<span lang="en"> Limited Edition</span></h2>
+                  <p class="cards-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-8.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title">Проект<span lang="en"> LAB</span></h2>
+                  <p class="cards-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards-item">
+              <a class="cards-link link" href="">
+                <div class="cards-img-case">
+                  <img src="./images/example-9.jpg" alt="пример работы один" width="370" />
+
+                  <div class="cards-overlay">
+                    <p class="overlasy-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="works-thumb">
+                  <h2 class="cards-title">
+                    <span lang="en">Growing Business</span>
+                  </h2>
+                  <p class="cards-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- how to find us section -->
+      <div class="container footer-flex">
+        <div class="footer-contacts-flex">
+          <a class="logo link" href="./index.html">
+            <span class="accent">Web</span>
+            Studio
+          </a>
+          <address class="address">
+            <ul class="address-list list">
+              <li>
+                <a
+                  class="adress-link link"
+                  href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+
+              <!-- contacts navigation -->
+
+              <li>
+                <a class="footer-contacts-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+
+              <li>
+                <a class="footer-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social-networks">
+          <h2 class="social-networks-title">присоединяйтесь</h2>
+          <ul class="social-networks-list list">
+            <li class="social-networks-item">
+              <a class="social-networks-link link" href="#"
+                ><svg class="social-networks-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="social-networks-item">
+              <a class="social-networks-link link" href="#"
+                ><svg class="social-networks-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a class="social-networks-link link" href="#"
+                ><svg class="social-networks-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a class="social-networks-link link" href="#"
+                ><svg class="social-networks-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="subscription" name="subscription-form">
+          <label class="label-subscription" for="user-email">Подпишитесь на рассылку</label>
+          <div class="subscription-container">
+            <input
+              class="input-subscription"
+              type="email"
+              id="user-email"
+              placeholder="E-mail"
+              name="user-email"
+              required
+              title="Вспоминайте почту"
+            />
+            <button class="btn-subscription" type="submit">
+              Подписаться
+              <svg class="subscription-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
