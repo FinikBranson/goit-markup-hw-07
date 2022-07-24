@@ -1,23 +1,26 @@
 .activities {
+
+    
+
     padding-top: 0px;
-}
 
-.activities-title {
-    margin-bottom: 50px;
-    text-align: center;
-}
+    &__title {
+        margin-bottom: 50px;
+    }
 
-.activities-list {
-    display: flex;
-    justify-content: space-between;
-}
+    &__list {
+        display: flex;
+        justify-content: space-between;
 
-.activities-cover {
-    position: relative;
-}
+        @extend .list;
 
+    }
 
-.activities-cover-title {
+    &__cover {
+        position: relative;
+    }
+
+    &__sub-title {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -25,14 +28,11 @@
     height: 70px;
     justify-content: center;
     align-items: center;
-    background-color: var(rgba(47, 48, 58, 0.8));
+    background-color: var(--activities-cover-color);
 
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--white-dominant-color);
-}
-
-.activities-img {
-    display: block;
+    }
 }
