@@ -3,44 +3,24 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background: var(--background-hero-color);
-}
-
-.hero.section {
+    
+ 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
     background-image: linear-gradient(to right, var(--gradient-color), var(--gradient-color)),
         url('../images/hero-img.jpg');
     background-repeat: no-repeat;
-    background-position: center;
     box-sizing: cover;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    background-position: center;
+    
+    &__title {
+        width: 696px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--white-dominant-color);
+    }
 }
 
-.hero-title {
-    display: block;
-    width: 696px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white-dominant-color);
-}
 
-.hero-btn {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--white-dominant-color);
-    padding: 10px 32px;
-    box-shadow: 0px 4px 4px var(--subscription-box-shadow);
-    border: none;
-    border-radius: 4px;
-    background: var(--dominant-color);
-    cursor: pointer;
-}
