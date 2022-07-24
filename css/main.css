@@ -69,12 +69,12 @@ ul {
   overflow: hidden;
 }
 
-.list, .page-nav {
+.list, .contacts, .page-nav {
   padding: 0;
   margin: 0;
 }
 
-.link, .page-nav__link, .logo {
+.link, .contacts__link, .page-nav__link, .logo {
   text-decoration: none;
   display: block;
 }
@@ -136,7 +136,44 @@ ul {
   color: var(--dominant-color);
 }
 
-/* header */
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: var(--text-color);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--dominant-color);
+}
+.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
+  fill: var(--dominant-color);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -158,25 +195,9 @@ ul {
   margin-right: 93px;
   padding-bottom: 24px;
 }
-
-.header-contacts-link:hover .header-icon,
-.header-contacts-link:focus .header-icon {
-  fill: var(--dominant-color);
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-  color: var(--dominant-color);
-}
-
-.header-contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-contacts-item {
-  display: inline-block;
+.header .contacts__link {
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 
 .hero {
@@ -244,7 +265,7 @@ ul {
   height: 120px;
 }
 
-.benefits-list.list, .benefits-list.page-nav {
+.benefits-list.list, .benefits-list.page-nav, .benefits-list.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
