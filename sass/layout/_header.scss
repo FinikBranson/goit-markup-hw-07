@@ -1,45 +1,35 @@
-.activities-title {
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-}
+
 
 
 /* header */
 
 .header {
     border-bottom: 1px solid #ececec;
+
+    &__container,
+    &__nav-inner,
+    &__contacts-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__container {
+        justify-content: space-between;
+        }
+
+    &__logo {
+        padding-top: 24px;
+        margin-right: 93px;
+        padding-bottom: 24px;
+
+    }
+}
+
+.page-nav {
+    
 }
 
 
-.header-container,
-.header-nav,
-.header-contacts-list {
-    display: flex;
-    align-items: center;
-}
-
-.header-container {
-    justify-content: space-between;
-}
-
-.header-container .logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 93px;
-    color: var(--dark-theme-logo);
-}
-
-.logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-}
-
-.accent {
-    color: var(--dominant-color);
-}
 
 .header-nav-link,
 .header-contacts-link {
