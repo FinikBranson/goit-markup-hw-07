@@ -1,66 +1,17 @@
-
-
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--footer-backgraund);
-
-    &__logo {
-            margin-bottom: 20px;
-        }
-    
-    &__inner {
-        display: flex;
-        align-items: baseline;
-    }
-    
-    &__contacts-inner {
-        margin-right: 84px;
-    }
-
-    &__socials-inner {
-        margin-right: 93px;
-        
-        .sub-title {
-        margin-bottom: 20px;
-        }
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer subscription form */
-
-
-
-
 .subscription {
-        display: block;
+    display: block;
 
-        &__label {
+    &__label {
         display: block;
         margin-bottom: 20px;
     }
 
-        &__container {
-            display: flex;
+    &__container {
+        display: flex;
 
-        }
+    }
 
-        &__input {
+    &__input {
         margin-right: 12px;
         width: 358px;
         height: 50px;
@@ -83,10 +34,9 @@
         padding: 10px 28px 10px 29px;
     }
 
-        &__icon {
+    &__icon {
         margin-left: 10px;
         fill: var(--white-dominant-color);
     }
 
 }
-
