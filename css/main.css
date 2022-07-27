@@ -526,6 +526,9 @@ ul {
 .modal__comment-field-input:focus, .modal__input-phone-field:focus, .modal__input-mail-field:focus, .modal__input-name-field:focus {
   border-color: var(--dominant-color);
 }
+.modal__input-phone-field:focus + .modal-icon, .modal__input-mail-field:focus + .modal-icon, .modal__input-name-field:focus + .modal-icon {
+  fill: var(--dominant-color);
+}
 .modal__checkbox-label {
   width: 100%;
   margin-bottom: 30px;
@@ -564,9 +567,6 @@ ul {
   left: 12px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-icon__input-phone-field:focus + .modal-icon, .modal-icon__input-mail-field:focus + .modal-icon, .modal-icon__input-name-field:focus + .modal-icon {
-  fill: var(--dominant-color);
 }
 
 .container {
