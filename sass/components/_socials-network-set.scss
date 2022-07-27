@@ -1,26 +1,22 @@
 .socials-network-set {
 
-    @extend .list;
-
-    display: flex;
-    justify-content: center;
+        @extend .list;
+        display: flex;
+        justify-content: center;
 
     &__item:not(:last-child) {
         margin-right: 10px;
     }
 
     &__link {
-
-    @extend .link;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: var(--icon-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @extend .link;
+        @extend %flex-centered;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: var(--icon-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__link--light {
@@ -30,9 +26,9 @@
 
     &__link:hover,
     &__link:focus {
-    background-color: var(--dominant-color);
-    border-radius: 50%;
-    fill: var(--white-dominant-color);
+        background-color: var(--dominant-color);
+        border-radius: 50%;
+        fill: var(--white-dominant-color);
     
     }
 }

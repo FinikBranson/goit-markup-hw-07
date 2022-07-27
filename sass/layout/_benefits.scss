@@ -3,6 +3,7 @@
     @extend .list;
 
     &__list {
+        @extend .list;
         display: flex;
         justify-content: space-between;
     }
@@ -12,9 +13,7 @@
     }
 
     &__decoration {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-centered;
         margin-bottom: 30px;
         background-color: var(--team-section-background);
         border-radius: 4px;

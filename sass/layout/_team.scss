@@ -1,10 +1,10 @@
 .team {
 
-    background-color: var(--team-section-background);
+        background-color: var(--team-section-background);
 
     &__list {
+        @extend .list;
         display: flex;
         justify-content: space-between;
-
     }
 }
