@@ -2,7 +2,7 @@
         padding-top: 0px;
 
     &__list {
-        @extend .list;
+    
         display: flex;
         justify-content: space-between;
 
@@ -13,9 +13,11 @@
     }
 
     &__sub-title {
+        
+    @extend %flex-centered;
+
     position: absolute;
     bottom: 0;
-    @extend %flex-centered;
     width: 100%;
     height: 70px;
     background-color: var(--activities-cover-color);

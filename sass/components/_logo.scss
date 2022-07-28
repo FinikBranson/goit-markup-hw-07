@@ -1,17 +1,11 @@
 .logo {
-    @extend .link;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--dominant-color);
 
-    &--contrast-black {
-        color: var(--black-dominant-theme);
+    &--accent {
+        color: var(--dominant-color);
     }
-
-    &--contrast-white {
-        color: var(--white-dominant-color);
-    }
-
 }
+
